@@ -1,0 +1,255 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-06-14 18:12+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\apps\api\apps.py:9
+msgid "API"
+msgstr "API"
+
+#: .\apps\api\config.py:6
+msgid "Prediction app settings "
+msgstr "Prediction app settings "
+
+#: .\apps\api\config.py:11
+msgid "A model for predicting a dog character"
+msgstr "A model for predicting a dog character"
+
+#: .\apps\api\config.py:19
+msgid "LSHASH model to predict dog character"
+msgstr "LSHASH model to predict dog character"
+
+#: .\apps\api\config.py:27
+msgid "Model for determining if there is a dog in the photo "
+msgstr "Model for determining if there is a dog in the photo "
+
+#: .\apps\api\config.py:35
+msgid "Model for predicting a dog breed from a photo "
+msgstr "Model for predicting a dog breed from a photo "
+
+#: .\apps\commons\admin.py:20 .\apps\commons\admin.py:31
+msgid "Category settings"
+msgstr "Category settings"
+
+#: .\apps\commons\admin.py:21 .\apps\commons\admin.py:43
+#: .\apps\commons\admin.py:56
+msgid "Visibility settings"
+msgstr "Visibility settings"
+
+#: .\apps\commons\admin.py:30 .\apps\commons\admin.py:55
+msgid "Feature settings"
+msgstr "Feature settings"
+
+#: .\apps\commons\admin.py:32
+msgid ""
+"Sensitive settings (! SELECT ONLY WHEN THE MODEL SUPPORTS THIS FEATURE!)"
+msgstr ""
+"Sensitive settings (! SELECT ONLY WHEN THE MODEL SUPPORTS THIS FEATURE!)"
+
+#: .\apps\commons\admin.py:41
+msgid "Breed settings"
+msgstr "Breed settings"
+
+#: .\apps\commons\admin.py:42
+msgid "Breed image"
+msgstr "Breed image"
+
+#: .\apps\commons\admin.py:54
+msgid "Question settings"
+msgstr "Question settings"
+
+#: .\apps\commons\apps.py:9
+msgid "Commons"
+msgstr "Commons"
+
+#: .\apps\prediction\apps.py:9
+msgid "Prediction"
+msgstr "Prediction"
+
+#: .\apps\prediction\templates\form\form.html:9
+msgid "Form"
+msgstr "Form"
+
+#: .\apps\prediction\templates\form\form.html:17
+msgid "Oh no, error..."
+msgstr "Oh no, error..."
+
+#: .\apps\prediction\templates\form\form.html:17
+msgid ""
+"An error occurred while trying to submit the form. Check that all fields "
+"have been completed."
+msgstr ""
+"An error occurred while trying to submit the form. Check that all fields "
+"have been completed."
+
+#: .\apps\prediction\templates\form\form.html:29
+msgid "Choose one value"
+msgstr "Choose one value"
+
+#: .\apps\prediction\templates\form\form.html:37
+#: .\apps\prediction\templates\form\form.html:49
+#: .\apps\prediction\templates\result\result.html:64
+msgid "Previous"
+msgstr "Previous"
+
+#: .\apps\prediction\templates\form\form.html:39
+#: .\apps\prediction\templates\result\result.html:68
+msgid "Next"
+msgstr ""
+
+#: .\apps\prediction\templates\form\form.html:44
+msgid "Send images!"
+msgstr "Send images!"
+
+#: .\apps\prediction\templates\form\form.html:46
+msgid "You can choose max 10 images."
+msgstr "You can choose max 10 images."
+
+#: .\apps\prediction\templates\form\form.html:50
+msgid "Submit"
+msgstr "Submit"
+
+#: .\apps\prediction\templates\result\result.html:9
+msgid "Results"
+msgstr "Results"
+
+#: .\apps\prediction\templates\result\result.html:15
+msgid "Stop!"
+msgstr "Stop!"
+
+#: .\apps\prediction\templates\result\result.html:15
+msgid ""
+"The new features of the application are at an early stage of development. "
+"Detecting dogs in photos may not work properly! Also, some photos may be "
+"skipped due to an internal error. Some photos of dogs may be blurry, "
+"mispositioned, watermarked, or simply missing. We are working on it all the "
+"time."
+msgstr ""
+"The new features of the application are at an early stage of development. "
+"Detecting dogs in photos may not work properly! Also, some photos may be "
+"skipped due to an internal error. Some photos of dogs may be blurry, "
+"mispositioned, watermarked, or simply missing. We are working on it all the "
+"time."
+
+#: .\apps\prediction\templates\result\result.html:21
+msgid "Matches based on image(s)"
+msgstr "Matches based on image(s)"
+
+#: .\apps\prediction\templates\result\result.html:26
+#: .\apps\prediction\templates\result\result.html:35
+msgid "Warning!"
+msgstr "Warning!"
+
+#: .\apps\prediction\templates\result\result.html:27
+msgid "Among the given images, there were those with no dog detected."
+msgstr "Among the given images, there were those with no dog detected."
+
+#: .\apps\prediction\templates\result\result.html:28
+#: .\apps\prediction\templates\result\result.html:37
+msgid "Amount"
+msgstr "Amount"
+
+#: .\apps\prediction\templates\result\result.html:36
+msgid ""
+"An error occurred while loading some of the photos. They have been omitted."
+msgstr ""
+"An error occurred while loading some of the photos. They have been omitted."
+
+#: .\apps\prediction\templates\result\result.html:56
+#: .\apps\prediction\templates\result\result.html:102
+msgid "Match Percentage"
+msgstr "Match Percentage"
+
+#: .\apps\prediction\templates\result\result.html:73
+#: .\apps\prediction\templates\result\result.html:113
+msgid "Well done!"
+msgstr "Well done!"
+
+#: .\apps\prediction\templates\result\result.html:74
+#, python-format
+msgid ""
+"All actions were performed correctly, but based on the given image(s), no "
+"breed was found that would suit you at least 30%%."
+msgstr ""
+"All actions were performed correctly, but based on the given image(s), no "
+"breed was found that would suit you at least 30%%."
+
+#: .\apps\prediction\templates\result\result.html:76
+#: .\apps\prediction\templates\result\result.html:116
+msgid "Please go back to the survey and try again."
+msgstr "Please go back to the survey and try again."
+
+#: .\apps\prediction\templates\result\result.html:77
+#: .\apps\prediction\templates\result\result.html:117
+msgid "Go to the survey"
+msgstr "Go to the survey"
+
+#: .\apps\prediction\templates\result\result.html:83
+msgid "Matches based on character"
+msgstr "Matches based on character"
+
+#: .\apps\prediction\templates\result\result.html:97
+msgid ""
+"A description of the animal will appear here in the future. For now, use the "
+"link below."
+msgstr ""
+"A description of the animal will appear here in the future. For now, use the "
+"link below."
+
+#: .\apps\prediction\templates\result\result.html:98
+msgid "More information"
+msgstr "More information"
+
+#: .\apps\prediction\templates\result\result.html:114
+#, python-format
+msgid ""
+"All actions were performed correctly, but based on the given "
+"characteristics, no breed was found that would suit you at least 70%%."
+msgstr ""
+"All actions were performed correctly, but based on the given "
+"characteristics, no breed was found that would suit you at least 70%%."
+
+#: .\settings.py:37
+msgid "English"
+msgstr "English"
+
+#: .\settings.py:38
+msgid "Polish"
+msgstr "Polish"
+
+#: .\templates\base.html:7 .\templates\parts\footer.html:17
+#: .\templates\parts\navigation.html:13
+msgid "BreedSelector"
+msgstr "BreedSelector"
+
+#: .\templates\base.html:7
+msgid "Empty name"
+msgstr "Empty name"
+
+#: .\templates\parts\footer.html:9 .\templates\parts\navigation.html:22
+#: .\templates\views\index.html:14
+msgid "Main page"
+msgstr "Main page"
+
+#: .\templates\parts\footer.html:11 .\templates\parts\navigation.html:23
+msgid "Find your friend"
+msgstr "Find your friend"
+
+#: .\templates\parts\footer.html:13 .\templates\parts\navigation.html:24
+msgid "Contact"
+msgstr "Contact"

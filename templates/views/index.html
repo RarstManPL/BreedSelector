@@ -1,0 +1,22 @@
+{% extends 'layouts/layout_1_col.html' %}
+{% load i18n %}
+{% load static %}
+{% load prediction_tags %}
+
+{% block html_style %}{{ block.super }}height: 100%; background: #FFC400;{% endblock %}
+{% block body_style %}{{ block.super }}background: transparent;{% endblock %}
+
+{% block styles %}
+    {{ block.super }}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/index/style.css' %}">
+{% endblock %}
+
+{% block title %}{% trans 'Main page' %}{% endblock %}
+
+{% block content_wrapper %}
+    <div class="row align-items-center text-center">
+        <div class="col mx-md-5 my-3 my-md-5 p-5 overflow-hidden">
+            <img src="{% static 'strona-w-przebudowie-obrazek.jpg' %}" class="img-fluid mx-auto">
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,36 @@
+{% load i18n %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="{{ LANGUAGE_CODE|default:'pl' }}" style="{% block html_style %}{% endblock %}">
+<head>
+    <title>{% trans 'BreedSelector' %} | {% block title %}{% trans 'Empty name' %}{% endblock %}</title>
+
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="created" content="{% now 'jS M Y h:i' %}">
+    <meta name="description" content="{% block description %}{% endblock %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="NOARCHIVE,NOCACHE">
+    <link rel="shortcut icon" href="{% static 'logo.svg' %}">
+
+    {% block cdn_styles %}
+    {% endblock %}
+
+    {% block styles %}
+    {% endblock %}
+
+</head>
+
+<body style="{% block body_style %}{% endblock %}">
+    {% block layout %}
+    {% endblock %}
+</body>
+
+{% block cdn_scripts %}
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+{% endblock %}
+
+{% block scripts %}
+{% endblock %}
+
+</html>

@@ -1,0 +1,38 @@
+{% load static %}
+{% load i18n %}
+
+<footer class="footer bg-dark py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 h-100 text-center text-lg-start my-auto">
+                <ul class="list-inline mb-2">
+                    <li class="list-inline-item"><a class="text-primary" href="{% url 'index' %}">{% trans 'Main page' %}</a></li>
+                    <li class="list-inline-item text-white">⋅</li>
+                    <li class="list-inline-item"><a class="text-primary" href="{% url 'prediction:form' %}">{% trans 'Find your friend' %}</a></li>
+                    <li class="list-inline-item text-white">⋅</li>
+                    <li class="list-inline-item"><a class="text-primary" href="#">{% trans 'Contact' %}</a></li>
+                </ul>
+
+                <p class="text-white-50 small mb-4 mb-lg-0">
+                    &copy; 2020 - {% now 'Y' %} Copyright: {% trans 'BreedSelector' %}
+                </p>
+            </div>
+
+            <div class="col-lg-6 h-100 text-center text-lg-end my-auto">
+                <ul class="list-inline mb-0">
+                    <li class="list-inline-item me-4">
+                        <a class="text-primary" href="#"><i class="fab fa-facebook fs-3"></i></a>
+                    </li>
+
+                    <li class="list-inline-item me-4">
+                        <a class="text-primary" href="#"><i class="fab fa-twitter fs-3"></i></a>
+                    </li>
+
+                    <li class="list-inline-item me-4">
+                        <a class="text-primary" href="#"><i class="fab fa-instagram fs-3"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>

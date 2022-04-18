@@ -1,0 +1,43 @@
+{% load static %}
+{% load i18n %}
+
+{% get_current_language as LANGUAGE_CODE %}
+{% get_available_languages as LANGUAGES %}
+{% get_language_info_list for LANGUAGES as languages %}
+
+<nav class="navbar navbar-expand-lg bg-dark navbar-dark navbar-static-top" id="mainNav">
+    <div class="container-fluid">
+
+        <a class="navbar-brand text-uppercase d-flex align-items-xl-center" href="{% url 'index' %}">
+            <img src="{% static 'logo.svg' %}" height="140px" class="align-text-top d-none d-lg-inline-block me-3">
+            <p class="d-inline-block">{% trans 'BreedSelector' %}</p>
+        </a>
+
+        <button class="navbar-toggler text-white rounded font-weight-bold text-uppercase" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="nav navbar-nav ms-auto me-3">
+                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="{% url 'index' %}">{% trans 'Main page' %}</a></li>
+                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="{% url 'prediction:form' %}">{% trans 'Find your friend' %}</a></li>
+                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">{% trans 'Contact' %}</a></li>
+            </ul>
+
+            {% block nav_languages %}
+                <div class="d-grid gap-2 d-block d-flex justify-content-center">
+                    <form action="{% url 'set_language' %}" method="POST">
+                        {% csrf_token %}
+                        <input name="next" type="hidden" value="{{ redirect_to }}">
+                        {% for language in languages %}
+                            {% if language.code != LANGUAGE_CODE %}
+                                <button type="submit" class="btn btn-outline-warning" name="language" value="{{ language.code }}">{{ language.name }}</button>
+                            {% endif %}
+                        {% endfor %}
+                    </form>
+                </div>
+            {% endblock %}
+        </div>
+    </div>
+</nav>
+

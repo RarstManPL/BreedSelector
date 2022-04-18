@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% load static %}
+{% load i18n %}
+
+{% block cdn_styles %}
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+{% endblock %}
+
+{% block styles %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/components/navbar.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/components/footer.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/components/preloader.css' %}">
+{% endblock %}
+
+{% block body_style %}overflow: hidden;{% endblock %}
+
+{% block layout %}
+    {% block preloader %}
+        {% include 'parts/preloader.html' %}
+    {% endblock %}
+
+    {% block navigation %}
+        {% include 'parts/navigation.html' %}
+    {% endblock %}
+
+    <div class="container-fluid">
+        {% block content_wrapper %}
+        {% endblock %}
+    </div>
+
+    {% block footer %}
+        {% include 'parts/footer.html' %}
+    {% endblock %}
+{% endblock %}
+
+{% block cdn_scripts %}
+    {{ block.super }}
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/4ea2c22d9c.js" crossorigin="anonymous"></script>
+{% endblock %}
+
+{% block scripts %}
+    <script src="{% static 'js/components/preloader.js' %}"></script>
+    <script>
+        {% block preloader_script %}
+            $('#loader-wrapper').preloadinator({
+                minTime: 1000
+            });
+        {% endblock %}
+    </script>
+{% endblock %}

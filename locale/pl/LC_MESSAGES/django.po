@@ -1,0 +1,258 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-06-14 18:12+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && (n"
+"%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && n"
+"%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
+
+#: .\apps\api\apps.py:9
+msgid "API"
+msgstr "API"
+
+#: .\apps\api\config.py:6
+msgid "Prediction app settings "
+msgstr "Ustawienia aplikacji predykcja"
+
+#: .\apps\api\config.py:11
+msgid "A model for predicting a dog character"
+msgstr "Model do przewidywania charakteru psa"
+
+#: .\apps\api\config.py:19
+msgid "LSHASH model to predict dog character"
+msgstr "LSHASH modelu do przewidywania charakteru psa"
+
+#: .\apps\api\config.py:27
+msgid "Model for determining if there is a dog in the photo "
+msgstr "Model do przewidywania, czy na zdjęciu jest pies "
+
+#: .\apps\api\config.py:35
+msgid "Model for predicting a dog breed from a photo "
+msgstr "Model do przewidywania rasy psa na podstawie zdjęcia "
+
+#: .\apps\commons\admin.py:20 .\apps\commons\admin.py:31
+msgid "Category settings"
+msgstr "Ustawienia kategorii"
+
+#: .\apps\commons\admin.py:21 .\apps\commons\admin.py:43
+#: .\apps\commons\admin.py:56
+msgid "Visibility settings"
+msgstr "Ustawienia widoczności"
+
+#: .\apps\commons\admin.py:30 .\apps\commons\admin.py:55
+msgid "Feature settings"
+msgstr "Ustawienia cechy"
+
+#: .\apps\commons\admin.py:32
+msgid ""
+"Sensitive settings (! SELECT ONLY WHEN THE MODEL SUPPORTS THIS FEATURE !)"
+msgstr ""
+"Wrażliwe ustawienia (! ZAZNACZ TYLKO JEŻELI MODEL WSPIERA TĘ CECHĘ !)"
+
+#: .\apps\commons\admin.py:41
+msgid "Breed settings"
+msgstr "Ustawienia rasy"
+
+#: .\apps\commons\admin.py:42
+msgid "Breed image"
+msgstr "Zdjęcie rasy"
+
+#: .\apps\commons\admin.py:54
+msgid "Question settings"
+msgstr "Ustawienia pytania"
+
+#: .\apps\commons\apps.py:9
+msgid "Commons"
+msgstr "Wspólne"
+
+#: .\apps\prediction\apps.py:9
+msgid "Prediction"
+msgstr "Predykcja"
+
+#: .\apps\prediction\templates\form\form.html:9
+msgid "Form"
+msgstr "Formularz"
+
+#: .\apps\prediction\templates\form\form.html:17
+msgid "Oh no, error..."
+msgstr "O nie, błąd..."
+
+#: .\apps\prediction\templates\form\form.html:17
+msgid ""
+"An error occurred while trying to submit the form. Check that all fields "
+"have been completed."
+msgstr ""
+"Wystąpił błąd podczas wysyłania formularza. Sprawdź, czy uzupełniłeś "
+"wszystkie pola."
+
+#: .\apps\prediction\templates\form\form.html:29
+msgid "Choose one value"
+msgstr "Wybierz przynajmniej jedną wartość"
+
+#: .\apps\prediction\templates\form\form.html:37
+#: .\apps\prediction\templates\form\form.html:49
+#: .\apps\prediction\templates\result\result.html:64
+msgid "Previous"
+msgstr "Poprzednia"
+
+#: .\apps\prediction\templates\form\form.html:39
+#: .\apps\prediction\templates\result\result.html:68
+msgid "Next"
+msgstr "Następna"
+
+#: .\apps\prediction\templates\form\form.html:44
+msgid "Send images!"
+msgstr "Wyślij zdjęcia!"
+
+#: .\apps\prediction\templates\form\form.html:46
+msgid "You can choose max 10 images."
+msgstr "Możesz wybrać maks. 10 zdjęć."
+
+#: .\apps\prediction\templates\form\form.html:50
+msgid "Submit"
+msgstr "Wyślij zapytanie"
+
+#: .\apps\prediction\templates\result\result.html:9
+msgid "Results"
+msgstr "Wyniki"
+
+#: .\apps\prediction\templates\result\result.html:15
+msgid "Stop!"
+msgstr "Stop!"
+
+#: .\apps\prediction\templates\result\result.html:15
+msgid ""
+"The new features of the application are at an early stage of development. "
+"Detecting dogs in photos may not work properly! Also, some photos may be "
+"skipped due to an internal error. Some photos of dogs may be blurry, "
+"mispositioned, watermarked, or simply missing. We are working on it all the "
+"time."
+msgstr ""
+"Nowe funkcje aplikacji są na wczesnym etapie rozwoju. Wykrywanie psa na zdjęciu "
+"może nie działać poprawnie. Ponado, część grafik może zostać pominiętych ze względu "
+"na wewnętrzny błąd programu. Część wizerunków psów może być niewyraźnych, źle "
+"wypozycjonowanych, oznaczonych znakami wodnymi, czy po prostu ich brakować. "
+"Cały czas pracujemy nad poprawą tych nie dogodności."
+
+#: .\apps\prediction\templates\result\result.html:21
+msgid "Matches based on image(s)"
+msgstr "Dopasowania na podstawie zdjęć"
+
+#: .\apps\prediction\templates\result\result.html:26
+#: .\apps\prediction\templates\result\result.html:35
+msgid "Warning!"
+msgstr "Uwaga!"
+
+#: .\apps\prediction\templates\result\result.html:27
+msgid "Among the given images, there were those with no dog detected."
+msgstr "Pośród podanych zdjęć, wykryto takie, na których nie znaleziono psa."
+
+#: .\apps\prediction\templates\result\result.html:28
+#: .\apps\prediction\templates\result\result.html:37
+msgid "Amount"
+msgstr "Ilość"
+
+#: .\apps\prediction\templates\result\result.html:36
+msgid ""
+"An error occurred while loading some of the photos. They have been omitted."
+msgstr ""
+"Wystąpił nieoczekiwany problem podczas ładowania części zdjęć. Zostały one pominięte."
+
+#: .\apps\prediction\templates\result\result.html:56
+#: .\apps\prediction\templates\result\result.html:102
+msgid "Match Percentage"
+msgstr "Procent dopasowania"
+
+#: .\apps\prediction\templates\result\result.html:73
+#: .\apps\prediction\templates\result\result.html:113
+msgid "Well done!"
+msgstr "Wszystko dobrze!"
+
+#: .\apps\prediction\templates\result\result.html:74
+#, python-format
+msgid ""
+"All actions were performed correctly, but based on the given image(s), no "
+"breed was found that would suit you at least 30%%."
+msgstr ""
+"Wszystkie akcje zostały wykonane poprawnie, lecz dla podanych zdjęć, "
+"nie znaleziono rasy psa odpowiadającej Tobie w przynajmniej 30%%."
+
+#: .\apps\prediction\templates\result\result.html:76
+#: .\apps\prediction\templates\result\result.html:116
+msgid "Please go back to the survey and try again."
+msgstr "Powróć do ankiety i spróbuj ponownie."
+
+#: .\apps\prediction\templates\result\result.html:77
+#: .\apps\prediction\templates\result\result.html:117
+msgid "Go to the survey"
+msgstr "Przejdź do ankiety"
+
+#: .\apps\prediction\templates\result\result.html:83
+msgid "Matches based on character"
+msgstr "Dopasowania na podstawie charakteru"
+
+#: .\apps\prediction\templates\result\result.html:97
+msgid ""
+"A description of the animal will appear here in the future. For now, use the "
+"link below."
+msgstr ""
+"W tym miejscu, w przyszłości pojawi się opis zwierzęcia. Na razie skorzystaj "
+"z odnośnika poniżej."
+
+#: .\apps\prediction\templates\result\result.html:98
+msgid "More information"
+msgstr "Więcej informacji"
+
+#: .\apps\prediction\templates\result\result.html:114
+#, python-format
+msgid ""
+"All actions were performed correctly, but based on the given "
+"characteristics, no breed was found that would suit you at least 70%%."
+msgstr ""
+"Wszystkie akcje zostały wykonane poprawnie, lecz na podstawie podanych "
+"wartości cech nie znaleziono rasy, która byłaby dla Ciebie idealna w "
+"przynajmniej 70%%."
+
+#: .\settings.py:37
+msgid "English"
+msgstr "Angielski"
+
+#: .\settings.py:38
+msgid "Polish"
+msgstr "Polski"
+
+#: .\templates\base.html:7 .\templates\parts\footer.html:17
+#: .\templates\parts\navigation.html:13
+msgid "BreedSelector"
+msgstr "BreedSelector"
+
+#: .\templates\base.html:7
+msgid "Empty name"
+msgstr "Brak nazwy"
+
+#: .\templates\parts\footer.html:9 .\templates\parts\navigation.html:22
+#: .\templates\views\index.html:14
+msgid "Main page"
+msgstr "Strona główna"
+
+#: .\templates\parts\footer.html:11 .\templates\parts\navigation.html:23
+msgid "Find your friend"
+msgstr "Znajdź swojego przyjaciela"
+
+#: .\templates\parts\footer.html:13 .\templates\parts\navigation.html:24
+msgid "Contact"
+msgstr "Kontakt"
